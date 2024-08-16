@@ -1,0 +1,11 @@
+build:
+  version: "v0.0.2"
+
+support:
+  message: "Bienvenidos al sistema bancario Accenture"
+  contactInfo:
+    name: "Daniel Eduardo Rojas Echeverri"
+    email: "daniel.a.rojas@accenture.com"
+  phoneNumbers:
+    - (57) 3233223330
+    - (57) 3102323322

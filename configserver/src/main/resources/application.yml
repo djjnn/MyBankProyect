@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/malbertocuao/bank-config.git"
+          #username: (solo si el git es privado y necesita autenticarse)
+          #password: (solo si el git es privado y necesita autenticarse)
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+        native:
+           #search-locations: "file:\\C:/config"
+          search-locations: "classpath:/config"
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+server:
+  port: 8071

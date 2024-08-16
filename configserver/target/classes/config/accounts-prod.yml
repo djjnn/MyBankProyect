@@ -1,0 +1,11 @@
+build:
+  version: "v0.0.2"
+
+support:
+  message: "Bienvenidos al sistema Cuentas de Accenture - Sistema en Produccion"
+  contactInfo:
+    name: "Product Owner - Cuentas"
+    email: "product.owner@accenture.com"
+  phoneNumbers:
+    - "(57) 3233223330"
+    - "(57) 3102323322"
